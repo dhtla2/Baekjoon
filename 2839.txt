@@ -1,0 +1,12 @@
+Kg = int(input())
+box = 0
+while True:
+    if Kg%5 == 0:
+        box += Kg/5
+        print(int(box))
+        break
+    Kg -= 3
+    box += 1
+    if Kg < 0 :
+        print('-1')
+        break

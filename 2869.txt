@@ -1,0 +1,8 @@
+import sys
+
+a, b, c = map(int, sys.stdin.readline().split())
+day = (c-b)/(a-b)
+if (c-b)%(a-b)==0:
+    print(int(day))
+else:
+    print(int(day)+1)
