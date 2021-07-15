@@ -1,0 +1,9 @@
+a = int(input())
+num = set()
+
+for i in range(a):
+    num.add(int(input()))
+num = list(num)
+num.sort()
+for j in num:
+    print(j)
