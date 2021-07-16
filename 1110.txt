@@ -1,0 +1,12 @@
+a = b = int(input())
+count = 0
+
+while True:
+    ten = a//10
+    one = a%10
+    c = ten + one
+    count += 1
+    a = int(str(a%10) + str(c%10))
+    if b == a:
+        break
+print(count)
