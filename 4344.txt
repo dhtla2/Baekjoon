@@ -1,0 +1,13 @@
+import sys
+a = int(input())
+
+for i in range(a):
+    b = list(map(int, sys.stdin.readline().split()))
+    del b[0]
+    d = []
+    for j in b:
+        c = sum(b)/len(b)
+        if j>c:
+            d.append(j)
+    e = len(d)/len(b)
+    print(str('%.3f' %round(e*100, 3))+"%")
