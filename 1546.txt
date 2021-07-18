@@ -1,0 +1,9 @@
+import sys
+a = int(input())
+b = list(map(int, sys.stdin.readline().split()))
+c = []
+
+for i in b:
+    c.append(i/max(b)*100)
+
+print(sum(c)/a)
