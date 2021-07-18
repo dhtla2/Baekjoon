@@ -1,0 +1,13 @@
+a = int(input())
+
+for i in range(a):
+    c = input()
+    b = 0
+    score = 0
+    for j in c:
+        if j == 'O':
+            b += 1
+        else:
+            b = 0
+        score += b
+    print(score)
