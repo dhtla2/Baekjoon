@@ -1,0 +1,9 @@
+a, b, c, d = map(int, input().split())
+
+xd = min([a, abs(a-c)])
+yd = min([b, abs(b-d)])
+
+if xd<=yd:
+    print(xd)
+else:
+    print(yd)
