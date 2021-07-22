@@ -1,0 +1,10 @@
+import math
+
+a = int(input())
+def S(x):
+    return pow(x, 2)*math.pi
+    
+def V(x):
+    return pow(x, 2)*2
+print(S(a))
+print(V(a))
