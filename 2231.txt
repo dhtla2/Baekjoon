@@ -1,0 +1,15 @@
+a = int(input())
+b = []
+def f(n):
+        m = str(n)
+        sol = 0
+        for i in range(len(m)):
+                sol += int(m[i])
+        return sol
+for i in range(0, 1000000):
+        if f(i)+i == a:
+                b.append(i)
+if len(b)==0:
+        print(0)
+else:
+        print(b[0])
