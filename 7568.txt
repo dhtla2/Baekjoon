@@ -1,0 +1,13 @@
+a = int(input())
+stu_list = []
+for i in range(a):
+        wei, hi = map(int, input().split())
+        stu_list.append((wei, hi))
+
+for j in stu_list:
+        rank = 1
+        for k in stu_list:
+                if j[0] < k[0] and j[1] < k[1]:
+                        rank += 1
+
+        print(rank, end=" ")
