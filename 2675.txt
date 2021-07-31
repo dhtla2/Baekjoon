@@ -1,0 +1,9 @@
+t = int(input())
+for i in range(t):
+    a, b = input().split()
+    c = [int(a), str(b)]
+    d = list(c[1])
+    for i in d:
+        d = i*c[0]
+        print(d, end="")
+    print()
