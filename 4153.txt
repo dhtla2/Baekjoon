@@ -1,0 +1,9 @@
+while True:
+    a = list(map(int, input().split()))
+    b = sorted(a)
+    if sum(a)==0:
+        break
+    elif pow(b[0], 2) + pow(b[1], 2) == pow(b[2], 2):
+        print('right')
+    else:
+        print('wrong')
