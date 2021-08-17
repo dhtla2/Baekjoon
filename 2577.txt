@@ -1,0 +1,8 @@
+b = 1
+for i in range(3):
+    a = int(input())
+    b *= a
+c = str(b)
+d = list(c)
+for i in range(10):
+    print(d.count(str(i)))
